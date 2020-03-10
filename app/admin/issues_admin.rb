@@ -1,7 +1,7 @@
 Trestle.resource(:issues) do
   menu do
     group :articles_db, priority: :first do
-      item :issues, icon: "fa fa-star"
+      item :issues, icon: "fa fa-star", priority: :first
     end
   end
 

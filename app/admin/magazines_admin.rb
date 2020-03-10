@@ -1,7 +1,7 @@
 Trestle.resource(:magazines) do
   menu do
-    group :articles_db, priority: :last do
-      item :magazines, icon: "fa fa-star"
+    group :articles_db do
+      item :magazines, icon: "fa fa-star", priority: :last
     end
   end
 

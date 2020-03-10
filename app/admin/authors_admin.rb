@@ -1,7 +1,7 @@
 Trestle.resource(:authors) do
   menu do
-    group :articles_db, priority: :last do
-      item :authors, icon: "fa fa-star"
+    group :articles_db do
+      item :authors, icon: "fa fa-star", priority: :last
     end
   end
 
