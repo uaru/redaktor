@@ -1,24 +1,33 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Objective 
 
-Things you may want to cover:
+The objective of this small system is to have an application which would help 
 
-* Ruby version
+The application would provide assistance for writing texts for a magazine. 
 
-* System dependencies
+- what topics were covered in the past issues of the magazine
+- what topics are already planned and assigned for future editions of the magazine
 
-* Configuration
+> I am going to focus on a anime related magazine, because this is what I am going to do. 
+>
+> 'redaktor' is the Polish word for 'editor'
 
-* Database creation
+## MVP  (first step)
 
-* Database initialization
+The MVP would be as follows: 
 
-* How to run the test suite
+- list of articles with tags
+- list of magazine issues
+- list of authors
+- list of original works the articles are about (optional, depending on time)
+- editors (!= authors) - basically admin users, authorisation via devise
 
-* Services (job queues, cache servers, search engines, etc.)
+The MVP shall be build with out-of-the-box UI, without any fancy design, but leave the possibility to add more sophisticated UI later. 
 
-* Deployment instructions
+## Dependencies
 
-* ...
+* ruby 2.7.0 - I chose the most modern, because the project is educational in nature
+* rails 6.0.x
+
+> further works in progress 
