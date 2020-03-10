@@ -55,3 +55,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'trestle'
 gem 'trestle-auth'
+gem 'acts-as-taggable-on', '~> 6.0'
