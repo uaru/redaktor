@@ -1,6 +1,6 @@
 Trestle.resource(:authors) do
   menu do
-    group :articles_db, priority: :first do
+    group :articles_db, priority: :last do
       item :authors, icon: "fa fa-star"
     end
   end
