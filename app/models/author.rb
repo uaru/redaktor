@@ -11,4 +11,6 @@ class Author < ApplicationRecord
   def display_name
     "#{surname}, #{name}"
   end
+
+  paginates_per 20
 end

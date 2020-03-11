@@ -5,5 +5,7 @@ class Article < ApplicationRecord
 
   scope :alphabetical, -> { order(title: :asc) }
 
+  paginates_per 30
+
   validates :title, presence: true
 end
