@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_10_091514) do
+ActiveRecord::Schema.define(version: 2020_03_11_200705) do
 
   create_table "administrators", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email"
@@ -56,6 +56,8 @@ ActiveRecord::Schema.define(version: 2020_03_10_091514) do
     t.datetime "issue_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "magazine_id"
+    t.index ["magazine_id"], name: "index_issues_on_magazine_id"
   end
 
   create_table "magazines", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|

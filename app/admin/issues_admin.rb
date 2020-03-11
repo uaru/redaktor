@@ -14,11 +14,17 @@ Trestle.resource(:issues) do
     column :month
     column :number
     column :issue_date
+    column :magazine
     actions
   end
 
 
   form do |issue|
+
+    select :magazine_id, Magazine.all, { label: "Magazine" }
+
+    divider
+
     row do
       col { text_field :year }
       col { text_field :number }
