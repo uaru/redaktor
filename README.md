@@ -25,9 +25,26 @@ The MVP would be as follows:
 
 The MVP shall be build with out-of-the-box UI, without any fancy design, but leave the possibility to add more sophisticated UI later. 
 
+## Admin user in local environment
+
+To set up initial admin user:
+
+```
+rails console
+```
+
+```ruby
+Administrator.create(email: "admin@admin.com", password: "password", first_name: "Admin", last_name: "A")
+```
+
 ## Dependencies
 
 * ruby 2.7.0 - I chose the most modern, because the project is educational in nature
 * rails 6.0.x
 
-> further works in progress 
+## TODO
+
+- pagination
+- add some tests
+- circleCi configuration
+- searchable select
