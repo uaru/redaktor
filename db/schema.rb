@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_200705) do
+ActiveRecord::Schema.define(version: 2020_03_11_204522) do
 
   create_table "administrators", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email"
@@ -45,6 +45,13 @@ ActiveRecord::Schema.define(version: 2020_03_11_200705) do
     t.string "email"
     t.string "slug"
     t.text "notes"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "authors_magazines", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC", force: :cascade do |t|
+    t.bigint "author_id", null: false
+    t.bigint "magazine_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

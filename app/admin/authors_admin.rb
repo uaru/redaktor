@@ -5,15 +5,16 @@ Trestle.resource(:authors) do
     end
   end
 
-  # Customize the table columns shown on the index view.
-  #
-  # table do
-  #   column :name
-  #   column :created_at, align: :center
-  #   actions
-  # end
-  #
-  # 
+  table do
+    column :name
+    column :surname
+    column :magazines, format: :tags do |author|
+      author.magazines.map { |it| admin_link_to(it.display_name, it) }
+    end
+    actions
+  end
+
+
   form do |author|
     tab :author do
       text_field :name
